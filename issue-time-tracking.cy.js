@@ -27,7 +27,7 @@ describe('time tracking functionality', () => {
         cy.get('input[placeholder="Number"]').should('be.empty')
     });
 
-    it.only('should add, edit and delete time logging', () => {
+    it('should add, edit and delete time logging', () => {
         cy.get('[data-testid="icon:stopwatch"]').click();
         TimeSpent()
           .clear()
